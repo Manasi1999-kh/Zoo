@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome To Zoo</h2>
+<p>people forget the good that zoos do. If it weren't for zoos, we would have so many species that would be extinct today. The greatness of a nation can be judged by the way its animals are treated.</p>
+
+<ul id="myUL">
+  <li><span class="caret">Animals</span>
+    <ul class="nested">
+      <li>Herbivores</li>
+      <li>Carnivores</li>
+      <li><span class="caret">Carnivores</span>
+        <ul class="nested">
+          <li>LION</li>
+          <a href="har.html">
+          <img  src="li1.jpg" alt="li1">
+          </a>
+ <ul>
+<li><b>Common name:</b>  Panthera leo leo</li>
+<li><b>Weight:</b> 349 &ndash; 475 lbs (males), 260 &ndash; 303 lbs (females)</li>
+<li><b>Size:</b> 70 &ndash; 82 inches (males), 66 &ndash; 72 inches (females)</li>
+<li><b>Endangered Status:</b> Endangered</li>
+<li><b>Unique Features:</b> Big size, pale fur</li>
+</ul>
+<img src="li2.jpg" alt="ti1">
+<ul>
+<li><b>Common name:</b>  North east congo lion </li>
+<li><b>Weight:</b> 349 &ndash; 475 lbs (males), 260 &ndash; 303 lbs (females)</li>
+<li><b>Size:</b> 70 &ndash; 82 inches (males), 66 &ndash; 72 inches (females)</li>
+<li><b>Endangered Status:</b> Endangered</li>
+<li><b>Unique Features:</b> Big size, pale fur</li>
+</ul>
+
+          
+          <li>TIGER</li>
+          <img src="ti1.jpg"alt="ti1">
+<ul>
+<li><b>Common name:</b> Siberian tiger</li>
+<li><b>Latin name:</b> <i>Panthera tigris altaica</i></li>
+<li><b>Also known as:</b> Korean tiger, Amur tiger, Manchurian tiger, Ussurian tiger</li>
+<li><b>Range:</b> North Asia (Russia, China, Korea)</li>
+<li><b>Weight:</b> 389 &ndash; 475 lbs (males), 260 &ndash; 303 lbs (females)</li>
+<li><b>Size:</b> 70 &ndash; 82 inches (males), 66 &ndash; 72 inches (females)</li>
+<li><b>Endangered Status:</b> Endangered</li>
+<li><b>Unique Features:</b> Big size, pale fur</li>
+</ul>
+<img src="ti2.jpg"alt="ti1">
+<ul>
+<li><b>Common name:</b> Bengal Tiger</li>
+<li><b>Latin name:</b> <i>Panthera tigris tigris</i></li><br>
+<li><b>Also known as:</b> Royal Bengal tiger, Indian tiger</li>
+<li><b>Weight:</b> 397 &ndash; 569 lbs (males), 220 &ndash; 350 lbs (females)</li>
+<li><b>Size:</b> 110 &ndash; 120 inches (males), 94 &ndash; 104 inches (females)</li>
+<li><b>Endangered Status:</b> Endangered</li>
+<li><b>Unique Features:</b> Large bodies, white mutation</li>
+</ul>
+          <li><span class="caret">Harbivores</span>
+            <ul class="nested">
+              <li>COW</li>
+              <li>Gyokuro</li>
+              <li>Matcha</li>
+              <li>Pi Lo Chun</li>
+            </ul>
+          </li>
+        </ul>
+      </li>  
+    </ul>
+  </li>
+</ul>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>

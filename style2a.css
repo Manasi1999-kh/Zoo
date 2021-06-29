@@ -1,0 +1,21 @@
+body{
+	background-image: url("hr2.jpg");
+	background-size: cover;
+
+	max-height: 100%;
+	background-position: center;
+}
+.c{
+	background-color: rgba(113, 218, 9,0.3);
+	margin-left: 10%;
+	margin-right: 10%;
+	color: rgb(238, 43, 43);
+}
+.c1
+{
+	font-size: 20px;
+}
+h1{
+	text-align: center;
+	color: rgb(224, 20, 20);
+}
